@@ -1,0 +1,11 @@
+--- t3/src/Makefile~	2004-11-27 10:28:18.000000000 +0100
++++ t3/src/Makefile	2004-12-02 13:38:36.884302152 +0100
+@@ -24,7 +24,7 @@
+ t3 : t3.o starfield.o block.o pieces.o xyz.o rgb.o
+ 	g++ $(CPPFLAGS) \
+ 		-I/usr/local/include \
+-		-L/usr/local/lib -L/usr/X11/lib \
++		-L/usr/local/lib -L/usr/X11R6/lib \
+ 		-lglut -lGL -lGLU -lXi -lXmu -lm -ltiff \
+ 		-o t3 $^
+ 
