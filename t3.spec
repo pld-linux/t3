@@ -1,5 +1,5 @@
 Summary:	3-D extrapolation of tetris
-Summary(pl):	Ekstrapolacja 3-D tetrisa
+Summary(pl):	Trójwymiarowa ekstrapolacja tetrisa
 Name:		t3
 Version:	04.11.29
 Release:	0.1
