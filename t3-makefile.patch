@@ -5,7 +5,7 @@
  	g++ $(CPPFLAGS) \
  		-I/usr/local/include \
 -		-L/usr/local/lib -L/usr/X11/lib \
-+		-L/usr/local/lib -L/usr/X11R6/lib \
++		-L/usr/local/lib -L/usr/X11R6/lib -L/usr/X11R6/lib64 \
  		-lglut -lGL -lGLU -lXi -lXmu -lm -ltiff \
  		-o t3 $^
  
