@@ -9,7 +9,10 @@ Source0:	http://dl.sourceforge.net/t-3/%{name}-%{version}-beta.tgz
 # Source0-md5:	034625e44e4ac9e5a603d35895ee43fd
 Patch0:		%{name}-makefile.patch
 URL:		http://t-3.sourceforge.net/
+BuildRequires:	gcc-c++
 BuildRequires:	glut-devel
+BuildRequires:	libtiff-devel
+BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -27,13 +30,11 @@ kwadratowych powierzchni.
 %prep
 %setup -q -n %{name}
 %patch0 -p1
-
-cd src
-sed -e "s,data,%{_datadir}/%{name}/&," t3.cpp > tmp
-mv -f tmp t3.cpp
+sed -i "s,data,%{_datadir}/%{name}/&," src/t3.cpp
 
 %build
-%{__make}
+%{__make} \
+	CPPFLAGS="%{rpmcflags} -I../include"
 
 %install
 rm -rf $RPM_BUILD_ROOT
