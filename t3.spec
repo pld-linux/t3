@@ -10,7 +10,6 @@ Source0:	http://dl.sourceforge.net/t-3/%{name}-%{version}-beta.tgz
 Patch0:		%{name}-makefile.patch
 URL:		http://t-3.sourceforge.net/
 BuildRequires:	glut-devel
-BuildRequires:	sed
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
