@@ -1,12 +1,12 @@
 Summary:	3-D extrapolation of tetris
 Summary(pl):	Trójwymiarowa ekstrapolacja tetrisa
 Name:		t3
-Version:	04.12.08
-Release:	0.1
+Version:	04.12.20
+Release:	1
 License:	GPL v2
 Group:		Applications/Games
 Source0:	http://dl.sourceforge.net/t-3/%{name}-%{version}-beta.tgz
-# Source0-md5:	2d815cdf71c791cea2e2a79239074792
+# Source0-md5:	689ac1f91b8fe66f9593ccf44f3ee33f
 Patch0:		%{name}-makefile.patch
 URL:		http://t-3.sourceforge.net/
 BuildRequires:	glut-devel
