@@ -30,6 +30,7 @@ kwadratowych powierzchni.
 %prep
 %setup -q -n %{name}
 %patch0 -p1
+
 sed -i "s,data,%{_datadir}/%{name}/&," src/t3.cpp
 
 %build
@@ -51,4 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc CHANGELOG.TXT README.TXT
 %attr(755,root,root) %{_bindir}/*
+%dir %{_datadir}/%{name}
+%dir %{_datadir}/%{name}/data
 %attr(755,root,root) %{_datadir}/%{name}/data/*
