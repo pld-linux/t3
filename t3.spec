@@ -52,6 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc CHANGELOG.TXT README.TXT
 %attr(755,root,root) %{_bindir}/*
-%dir %{_datadir}/%{name}
-%dir %{_datadir}/%{name}/data
-%attr(755,root,root) %{_datadir}/%{name}/data/*
+%{_datadir}/%{name}
