@@ -9,8 +9,8 @@ Source0:	http://dl.sourceforge.net/t-3/%{name}-%{version}-beta.tgz
 # Source0-md5:	034625e44e4ac9e5a603d35895ee43fd
 Patch0:		%{name}-makefile.patch
 URL:		http://t-3.sourceforge.net/
-BuildRequires:	gcc-c++
 BuildRequires:	glut-devel
+BuildRequires:	libstdc++-devel
 BuildRequires:	libtiff-devel
 BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
