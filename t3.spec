@@ -1,5 +1,5 @@
 Summary:	3-D extrapolation of tetris
-Summary(pl):	Trójwymiarowa ekstrapolacja tetrisa
+Summary(pl.UTF-8):   TrÃ³jwymiarowa ekstrapolacja tetrisa
 Name:		t3
 Version:	04.12.20
 Release:	2
@@ -21,10 +21,10 @@ puzzle-arcade game, Tetris(tm). Whereas the objective of the classical
 Tetris(tm) game was to arrange falling pieces into horizontal lines,
 the objective of T^3 is to form square surfaces.
 
-%description -l pl
-T^3 ("T-sze¶cienny") jest trójwymiarow± ekstrapolacj± popularnej gry
-Tetris(tm). Celem klasycznego Tetrisa(tm) jest u³o¿enie spadaj±cych
-klocków w poziome linie, natomiast celem T^3 jest u³o¿enie
+%description -l pl.UTF-8
+T^3 ("T-szeÅ›cienny") jest trÃ³jwymiarowÄ… ekstrapolacjÄ… popularnej gry
+Tetris(tm). Celem klasycznego Tetrisa(tm) jest uÅ‚oÅ¼enie spadajÄ…cych
+klockÃ³w w poziome linie, natomiast celem T^3 jest uÅ‚oÅ¼enie
 kwadratowych powierzchni.
 
 %prep
